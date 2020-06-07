@@ -1,0 +1,239 @@
+.cms-home-page{
+  display: flex;
+  >div{
+    position: relative;
+    &:first-of-type{
+      transition: width .2s;
+      -webkit-transition: width .2s; /* Safari */
+      box-shadow: 2px 2px 5px #eee;
+    }
+  }
+}
+.home-page-nav-hidden{
+  width: 50px;
+  >div{
+    display: none;
+    &:first-of-type{
+      display: flex;
+      >span{
+        display: none;
+        &:last-of-type{
+          display: block;
+        }
+      }
+    }
+  }
+  .title{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.home-page-nav{
+  width: 300px;
+  overflow-y: scroll;
+  height: 79vh;
+
+  >div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 13px;
+
+    &:nth-of-type(2){
+      background-color: #efefef;
+      height: 20px;
+
+    }
+    >ul{
+      >li{
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        padding: 14px 0px;
+        >img {
+          width:36px;
+        }
+        >div{
+          display: flex;
+          flex-direction: column;
+          margin: 0px 12px;
+          height: 43px;
+          justify-content: space-around;
+          &:first-of-type{
+            flex: 1;
+            >span{
+              &:first-of-type{
+                color:#3daaec;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .title{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+  }
+}
+.small-nav{
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  right: 0%;
+}
+/*滚动条整体样式*/
+.box::-webkit-scrollbar {
+  width: 10px;
+  height: 1px;
+}
+/*滚动条滑块*/
+.box::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: #ababab;
+}
+/*滚动条轨道*/
+.box::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(224,224,224,0);
+  border-radius: 10px;
+  background: #e0e0e0;
+}
+.cms-homepage-content{
+  display: flex;
+  width: 100%;
+  >div{
+    &:first-of-type{
+      width: 43px;
+      color: #adafb2;
+      padding:17px 13px;
+      font-size: 20px;
+      display: flex;
+    flex-direction: column-reverse;
+    
+    }
+    &:last-of-type{
+      width: 100%;
+      padding:15px 10px 17px 0px;
+      display: flex;
+      flex-direction: column;
+      >div{
+        &:last-of-type{
+          height: 100%;
+          flex: 1;
+          display: flex;
+          >div{
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
+.cms-homepage-header-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e4e7ed;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  >ul{
+    display: flex;
+    margin-bottom: 0;
+    width: 100%;
+    >li{
+      margin-right: 40px;
+      position: relative;
+      cursor: pointer;
+    }
+  }
+}
+.blue-solid{
+  height: 2px;
+  background-color: #409eff;
+  position: absolute;
+  left: 0;
+  bottom: -6.5px;
+  width: 100%;
+}
+.cms-home-page-line-echarts{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cms-home-time-picker{
+  background-color: #f2f3f4;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  .ant-btn-primary{
+    background: #fff;
+    border:1px solid #eee;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  >div{
+    margin-right:6px;
+    &:first-of-type{
+      width: 20vw;
+    }
+  }
+  .cms-home-select{
+    width: 26.8vw !important;
+  }
+}
+.photo-view{
+  display: block !important;
+  height: 70vh;
+  overflow-y: scroll;
+  >img{
+    width: 49%;
+    margin-bottom: 15px;
+    &:nth-child(2n){
+      margin-left: 15px;
+    }
+  }
+  Button{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: block;
+  }
+}
+.cms-rouse-echarts{
+  height: 65vh;
+  display: flex;
+  >ul{
+    width: 292px;
+    background-color: #f2f3f4;
+    overflow-y: scroll;
+    display: flex;
+    height: 100%;
+    margin-left: 10px;
+    // justify-content: space-around;
+    flex-direction: column;
+    >li{
+      padding: 5px 0px;
+      &:first-of-type{
+        background-color: #4a88dc;
+        color: white;
+      }
+      display: flex;
+      >span{
+        flex: 1;
+        text-align: center;
+      }
+    }
+  }
+}

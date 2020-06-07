@@ -1,0 +1,47 @@
+.login {
+  background-image: url("../img/login/background.png");
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  >div{
+    width: 350px;
+    height: 50%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    >.title{
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid #eeeeee;
+      color: #3978bc;
+      font-weight: 800;
+    }
+    >.form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      padding: 0 20px;
+      span,Button{
+        margin-top: 25px;
+        &:first-child{
+          margin-top: 0px !important;
+        }
+      }
+      Button{
+        background-color: #409eff;
+       border-color: #409eff;
+      width: 100%;
+      border-radius: 10px;
+      height: 39px;
+      }
+    }
+  }
+}
